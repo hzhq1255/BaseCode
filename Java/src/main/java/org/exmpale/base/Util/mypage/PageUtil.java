@@ -1,4 +1,4 @@
-package org.exmpale.base.Util;
+package org.exmpale.base.Util.mypage;
 
 import java.util.List;
 

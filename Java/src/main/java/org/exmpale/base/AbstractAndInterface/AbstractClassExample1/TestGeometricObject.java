@@ -1,4 +1,6 @@
-package org.exmpale.base.AbstractAndInterface.AbstractClassExample;
+package org.exmpale.base.AbstractAndInterface.AbstractClassExample1;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * @author hzhq1255
@@ -6,16 +8,20 @@ package org.exmpale.base.AbstractAndInterface.AbstractClassExample;
  */
 public class TestGeometricObject {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         // 创建两个几何对象
         GeometricObject object1 = new Circle(5);
         GeometricObject object2 = new Rectangle(5,3);
+
 
         System.out.println(equalArea(object1,object2));
 
         displayGeometricObject(object1);
 
         displayGeometricObject(object2);
+
+        ObjectMapper objectMapper = new ObjectMapper();
+        System.out.println(objectMapper.writeValueAsString(object1));
     }
 
 

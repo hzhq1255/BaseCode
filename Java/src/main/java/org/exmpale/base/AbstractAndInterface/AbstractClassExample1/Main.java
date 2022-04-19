@@ -1,4 +1,4 @@
-package org.exmpale.base.AbstractAndInterface.AbstractClassExample;
+package org.exmpale.base.AbstractAndInterface.AbstractClassExample1;
 
 /**
  * @author hzhq1255
@@ -9,7 +9,6 @@ public class Main {
     public static void main(String[] args) {
         Number number = Integer.valueOf(3);
         System.out.println(number.intValue());
-        System.out.println(((Integer)number).compareTo(Integer.valueOf(4)));
 
     }
 }

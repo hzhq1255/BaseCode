@@ -1,4 +1,4 @@
-package org.exmpale.base.AbstractAndInterface.AbstractClassExample;
+package org.exmpale.base.AbstractAndInterface.AbstractClassExample1;
 
 
 import org.exmpale.base.Util.myjson.JsonUtil;
