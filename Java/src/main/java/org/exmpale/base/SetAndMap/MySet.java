@@ -1,4 +1,4 @@
-package SetAndMap;
+package org.exmpale.base.SetAndMap;
 
 /**
  * @Author: hzhq1255

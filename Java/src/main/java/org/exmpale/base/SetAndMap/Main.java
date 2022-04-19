@@ -1,4 +1,4 @@
-package SetAndMap;
+package org.exmpale.base.SetAndMap;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;
