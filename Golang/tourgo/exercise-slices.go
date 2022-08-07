@@ -9,6 +9,7 @@
 package main
 
 import (
+	// clone to $GOPATH/src
 	"math"
 
 	"golang.org/x/tour/pic"
