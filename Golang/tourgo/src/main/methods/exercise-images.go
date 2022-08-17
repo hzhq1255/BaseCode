@@ -7,7 +7,7 @@ import (
 )
 
 type Image struct {
-	x, y, x1, y1 int
+	x, y int
 }
 
 func (i Image) ColorModel() color.Model {
@@ -15,9 +15,7 @@ func (i Image) ColorModel() color.Model {
 }
 
 func (i Image) Bounds() image.Rectangle {
-	return image.Rectangle{
-		Min: image.Point{X: i.x, Y: i.y},
-		Max: image.Point{X: i.x1, Y: i.y1}}
+	return image.Rect(i.x, i.y, 255, 255)
 }
 
 func (i Image) At(x, y int) color.Color {
@@ -25,6 +23,6 @@ func (i Image) At(x, y int) color.Color {
 }
 
 func main() {
-	m := Image{50, 50, 50, 50}
+	m := Image{50, 50}
 	pic.ShowImage(m)
 }
