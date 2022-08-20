@@ -12,7 +12,7 @@
     if (name === ''){
         name = 'you';
     }
-    let s: string = 'One for ' + name + ', one for me';
+    let s: string =  `One for ${ name }, one for me`;
     return s;
   }
 
