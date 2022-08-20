@@ -9,7 +9,7 @@
  * @returns 
  */
  export function twoFer(name: string): string {
-    if (name === ''){
+    if (!name || name === ''){
         name = 'you';
     }
     let s: string =  `One for ${ name }, one for me`;
