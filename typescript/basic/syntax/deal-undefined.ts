@@ -17,36 +17,54 @@ interface IExample1 {
 console.log('-------------------------------')
 
 // ?? 与 || 类似 但是 || 会排除 0 ?? 不会
-console.log(null || 3);
-console.log(null ?? 3);
-console.log(undefined || 2);
-console.log(undefined ?? 2);
-console.log(0 || 2);
-console.log(0 ?? 2);
+console.log(null || 3); // 3
+console.log(null ?? 3); // 3
+console.log(undefined || 2); // 2 
+console.log(undefined ?? 2); // 2
+console.log(0 || 2); // 2
+console.log(0 ?? 2); // 0
 
-// ?. 和 && 基本一致 a ?. b 相当于 a && a.b ? a.b : undefined 方便取 data 数据
-const obj = {
-    a: {
-        b: {
-            d: 1,
-            e: undefined
-        },
-        c: null
-    }
-}
 
-console.log('-----------------------');
+console.log('-------------------------------');
 
 import * as fs from 'fs';
-try {
-    const data = JSON.parse(fs.readFileSync('./data.json', 'utf8'));
-    const obj = Object.assign({}, data);
-    console.log(obj?.a?.b);
-    console.log(obj?.a?.c);
-} catch(err) {
-    console.log(err);
+/*
+{
+    "a": {
+        "b": "c"
+    }
+}
+*/
+// ?. 和 && 基本一致 a ?. b 相当于 a && a.b ? a.b : undefined 方便取 data 数据 
+
+function questionMarkAndPoint(){
+    try {
+        const data = JSON.parse(fs.readFileSync('./data.json', 'utf8'));
+        const obj = Object.assign({}, data);
+        console.log(obj?.a?.b); // c
+        console.log(obj?.a?.c); // undefined
+        console.log(obj?.a?.b?.c); // undefined
+    } catch(err) {
+        console.log(err);
+    }
+
 }
 
 
+console.log('-------------------------------');
+// !. 的意思是断言，告诉 ts 该对象里一定有某个值
+function assertValue(){
+    let map: Map<string, any> = new Map([
+        ['a', {
+            name: 'a'
+        }],
+        ['b', {
+            name: 'b'
+        }],
+    ]);
+    const value: string = map.get('a')!.name;
+    console.log(value);
+}
+assertValue();
 
 
