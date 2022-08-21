@@ -47,3 +47,27 @@ export function decodedValue(rs: string[]): number {
 let res: number = decodedValue(['blue', 'red', 'white', 'grey']);
 
 console.log(res);
+
+
+const decodedValueFunc = (rs: string[]): number => {
+    let obj = new Object({
+        black: 0,
+        brown: 1,
+        red: 2,
+        orange: 3,
+        yellow: 4,
+        green: 5,
+        blue: 6,
+        violet: 7,
+        grey: 8,
+        white: 9,
+    });
+    let s: string = '';
+    for(let i: number = 0; i < rs.length && i < 2 ; i++){
+        let key : keyof typeof obj = <keyof typeof obj> rs[i];
+        s += `${obj[key] ?? ''}`
+    }
+    return isNaN(Number(s)) ? 0 : Number(s)  ;
+}
+
+console.log(decodedValueFunc(['blue', 'red', 'white', 'grey']));
