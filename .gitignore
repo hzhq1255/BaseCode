@@ -1,3 +1,5 @@
 **/.idea
 **/target
 **/node_modules
+*.code-workspace
+**/.vscode
