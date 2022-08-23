@@ -1,0 +1,92 @@
+[
+  {
+    "name": "testcm-0",
+    "namespace": "kube-system",
+    "immutable": true,
+    "createdTime": "2022-08-22 22:48:39",
+    "data": null,
+    "stringData": null,
+    "binaryData": null
+  },
+  {
+    "name": "testcm-1",
+    "namespace": "default",
+    "immutable": false,
+    "createdTime": "2022-08-22 22:48:39",
+    "data": null,
+    "stringData": null,
+    "binaryData": null
+  },
+  {
+    "name": "testcm-2",
+    "namespace": "kube-system",
+    "immutable": false,
+    "createdTime": "2022-08-22 22:48:39",
+    "data": null,
+    "stringData": null,
+    "binaryData": null
+  },
+  {
+    "name": "testcm-3",
+    "namespace": "default",
+    "immutable": true,
+    "createdTime": "2022-08-22 22:48:39",
+    "data": null,
+    "stringData": null,
+    "binaryData": null
+  },
+  {
+    "name": "testcm-4",
+    "namespace": "kube-system",
+    "immutable": false,
+    "createdTime": "2022-08-22 22:48:39",
+    "data": null,
+    "stringData": null,
+    "binaryData": null
+  },
+  {
+    "name": "testcm-5",
+    "namespace": "default",
+    "immutable": false,
+    "createdTime": "2022-08-22 22:48:39",
+    "data": null,
+    "stringData": null,
+    "binaryData": null
+  },
+  {
+    "name": "testcm-6",
+    "namespace": "kube-system",
+    "immutable": true,
+    "createdTime": "2022-08-22 22:48:39",
+    "data": null,
+    "stringData": null,
+    "binaryData": null
+  },
+  {
+    "name": "testcm-7",
+    "namespace": "default",
+    "immutable": false,
+    "createdTime": "2022-08-22 22:48:39",
+    "data": null,
+    "stringData": null,
+    "binaryData": null
+  },
+  {
+    "name": "testcm-8",
+    "namespace": "kube-system",
+    "immutable": false,
+    "createdTime": "2022-08-22 22:48:39",
+    "data": null,
+    "stringData": null,
+    "binaryData": null
+  },
+  {
+    "name": "testcm-9",
+    "namespace": "default",
+    "immutable": true,
+    "createdTime": "2022-08-22 22:48:39",
+    "data": null,
+    "stringData": null,
+    "binaryData": null
+  }
+]
