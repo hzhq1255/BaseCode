@@ -3,7 +3,7 @@ package work.hzhq1255.designPattern.creation.builder;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.Map;
+import java.util.LinkedHashMap;
 
 /**
  * @author hzhq
@@ -18,7 +18,10 @@ class URLBuilderTest {
                 .domain("www.baidu.com")
                 .scheme("https")
                 .path("/s")
-                .query(Map.of("wd", "test", "ie", "utf-8"))
+                .query(new LinkedHashMap<>() {{
+                    put("wd", "test");
+                    put("ie", "utf-8");
+                }})
                 .build();
         String expected = "https://www.baidu.com/s?wd=test&ie=utf-8";
         Assertions.assertEquals(expected, url);
