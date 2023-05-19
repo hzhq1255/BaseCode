@@ -14,6 +14,6 @@ import java.util.Random;
 public class Taxation {
 
     public String applyTaxCode(String companyName){
-        return String.valueOf(new Random().nextInt());
+        return String.valueOf(new Random().nextInt(1000));
     }
 }

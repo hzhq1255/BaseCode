@@ -30,6 +30,8 @@ public class Facade {
     }
 
     public static void main(String[] args) {
-
+        Facade f = new Facade(new AdminOfIndustry(), new Bank(), new Taxation());
+        Company company = f.openCompany("test-company");
+        System.out.println(company.toString());
     }
 }
